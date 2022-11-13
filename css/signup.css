@@ -1,0 +1,64 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:750px){
+
+}
+
+@media (min-width:751px){
+    form{
+        height: 450px;
+    }
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(../logo/1555330807phpDs2cPz.jpeg);
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    width: 100%;
+    background-size: contain;
+    height: 100%;
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+input{
+    height: 35px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.names{
+    display: flex;
+}
+
+input:active{
+    border: 2px solid black;
+}
+
+#fname, #lname{
+    max-width: 140px;
+    width: 100%;
+    margin: 15px;
+}
+
+.email, .pass, .cpass{
+    margin: 20px;
+}
