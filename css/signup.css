@@ -11,9 +11,6 @@ html{
     #fname, #lname, #cod-fname, #cod-lname{
         margin: 0px;
     }
-    .radio{     
-        font-size: 15px;
-    }
 }
 
 @media (min-width:751px){
@@ -116,6 +113,7 @@ fieldset{
     display: flex;
     align-items: center;
     padding: 10px;
+    font-size: 15px;
 }
 
 .check-co-del{
