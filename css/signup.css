@@ -5,7 +5,7 @@ html{
 
 @media (max-width:750px){
     form{
-        min-width: 375px;
+        min-width: 350px;
         padding: 30px;
     }
     #fname, #lname, #cod-fname, #cod-lname{
