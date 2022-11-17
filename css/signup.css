@@ -1,42 +1,49 @@
 html{
-    height: 100%;
     width: 100%;
+    min-height: 100%;
 }
 
 @media (max-width:750px){
-
+    form{
+        max-width: 500px;
+    }
 }
 
 @media (min-width:751px){
     form{
-        height: 450px;
+        width: 900px;
     }
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(../logo/1555330807phpDs2cPz.jpeg);
+    background:linear-gradient(rgb(0 74 132 / 70%), rgba(112, 255, 243, 0.7)), url(../logo/mun-logo-4.png);
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-blend-mode: luminosity;
     width: 100%;
-    background-size: contain;
     height: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    max-width: 375px;
     background-color: white;
     padding: 50px;
     border-radius: 5px;
+    margin: 50px;
 }
 
-input{
+.inputs, .date-of-birth, .cod-date-of-birth, .diet, .cod-diet, .accomodation, .cod-accomodation,
+.past-MUN-as-del, .past-MUN-as-exec, .past-public-speaker, .comment{
+    margin: 15px;
+}
+.inputs{
     height: 35px;
     border: 1px solid rgb(168, 168, 168);
     border-radius: 5px;
-    margin: 15px;
 }
 
 .forms{
@@ -49,9 +56,6 @@ input{
     display: flex;
 }
 
-input:active{
-    border: 2px solid black;
-}
 
 #fname, #lname{
     max-width: 140px;
@@ -59,6 +63,67 @@ input:active{
     margin: 15px;
 }
 
-.email, .pass, .cpass{
+#email, #cod-email{
+    width: 200px;
+}
+
+.date-of-birth, .cod-date-of-birth{
+    margin-left: 18px;
+}
+
+#dob, #cod-dob{
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 7px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+.gender{
+    margin: 15px;
+}
+
+
+
+fieldset{
+    display: flex;
+    border: none;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.check-co-del{
+    display: flex;
+    align-items: center;
+}
+
+input:focus{
+    box-shadow: 0px 0px 10px 4px #00316a66;
+    outline: none;
+}
+
+input[type=checkbox]:focus{
+    box-shadow: 0px 0px 0px;
+    outline: none;
+}
+
+.btn{
+    width: 150px;
+    align-self: end;
     margin: 20px;
 }
