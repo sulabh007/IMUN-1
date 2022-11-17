@@ -5,14 +5,23 @@ html{
 
 @media (max-width:750px){
     form{
-        max-width: 500px;
+        max-width: 400px;
+        padding: 30px;
+    }
+    #fname, #lname, #cod-fname, #cod-lname{
+        margin: 0px;
     }
 }
 
 @media (min-width:751px){
     form{
         width: 900px;
+        padding: 50px;
     }
+    #fname, #lname, #cod-fname, #cod-lname{
+        margin: 15px;
+    }
+
 }
 
 body{
@@ -31,7 +40,6 @@ form{
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 50px;
     border-radius: 5px;
     margin: 50px;
 }
@@ -57,7 +65,7 @@ form{
 }
 
 
-#fname, #lname{
+#fname, #lname, #cod-fname, #cod-lname{
     max-width: 140px;
     width: 100%;
     margin: 15px;
@@ -73,7 +81,7 @@ form{
 
 #dob, #cod-dob{
     height: 25px;
-    margin-left: 10px;
+    width: 125px;
     border-radius: 7px;
 
 }
