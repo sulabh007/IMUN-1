@@ -5,12 +5,13 @@ html{
 
 @media (max-width:750px){
     form{
-        min-width: 350px;
+        min-width: 375px;
         padding: 30px;
     }
     #fname, #lname, #cod-fname, #cod-lname{
         margin: 0px;
     }
+   
 }
 
 @media (min-width:751px){
@@ -22,6 +23,29 @@ html{
         margin: 15px;
     }
 
+}
+
+@media (max-width:900px){
+    .comm-table{
+        overflow: scroll;
+    }
+   
+}
+
+@media (min-width:901px){
+    .comm-table{
+        overflow: hidden;
+    }
+}
+
+.coun-prefer{
+    max-width: 450px;
+    width: 90%;
+}
+
+table{
+    font-size: 15px;
+    text-align: center;
 }
 
 body{
@@ -112,8 +136,8 @@ fieldset{
 .radio{
     display: flex;
     align-items: center;
-    padding: 5px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 .check-co-del{
