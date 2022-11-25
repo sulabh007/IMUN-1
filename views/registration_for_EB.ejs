@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <form action="/" method="post">
+    <form action="/registration_for_EB" method="post">
         <div class="forms">
             <h1 style="font-size: 2rem;margin-bottom: 2rem;">D. Y. Patil MUN Registeration For Executive Board</h1>
             <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -55,19 +55,19 @@
                                 <div class="gender">
                                     <fieldset>
                                         <div class="radio">
-                                            <input type="radio" id="male" name="gender" value="male">
+                                            <input type="radio" id="male" name="gender_eb" value="male">
                                             <label for="male">Male</label>
                                         </div>
 
                                         <div class="radio">
-                                            <input type="radio" id="female" name="gender" value="female">
+                                            <input type="radio" id="female" name="gender_eb" value="female">
                                             <label for="female">Female</label>
                                         </div>
 
                                         <div class="radio">
-                                            <input type="radio" id="other" name="gender" value="other">
+                                            <input type="radio" id="other" name="gender_eb" value="other">
                                             <label for="other">Other</label>
-                                            <input type="text" class="form-control" id="other-gender" name="gender"
+                                            <input type="text" class="form-control" id="other-gender" name="gender_eb"
                                                 style="display: none">
                                             <script>document.getElementById('other').onchange = function () {
                                                         document.getElementById('other-gender').style.display = "block";
@@ -128,19 +128,19 @@
                                     <label for="past-del" class="form-label">Previous MUN Experience as a Delegate (Sr.
                                         No. / Conference Name / Year
                                         / Committee / Country)</label><br>
-                                    <textarea class="form-control" id="past-del" rows="2"></textarea>
+                                    <textarea class="form-control" name="past_dele" id="past-del" rows="2"></textarea>
                                 </div>
                                 <div class="past-MUN-as-exec">
                                     <label for="past-exec" class="form-label">Previous MUN Experience as The Executive
                                         Board (Sr. No. /
                                         Conference Name / Year / Committee / Country)</label><br>
-                                    <textarea class="form-control" id="past-exec" rows="2"></textarea>
+                                    <textarea class="form-control" name="past_exec" id="past-exec" rows="2"></textarea>
                                 </div>
                                 <div class="past-public-speaker">
                                     <label for="past-ps" class="form-label">Public Speaking Experience apart from a
                                         Model United Nations
                                         Conference</label><br>
-                                    <textarea class="form-control" id="past-ps" rows="2"></textarea>
+                                    <textarea class="form-control" name="past_ps" id="past-ps" rows="2"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -179,42 +179,42 @@
                                 <tbody>
                                     <tr>
                                         <td class="col-heading">Committee <br>Preference 1</td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="DISEC"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="EFC"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SOCHUM"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SPECPOL"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="ESC"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNGA"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SC/UNSC"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNESCO"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNCTAD"></td>
-                                        <td><input type="radio" name="comm-preference1" id="comm-preference1" value="G20"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference1" id="comm-preference1" value="G20"></td>
                                     </tr>
                                     <tr>
                                         <td>Committee <br>Preference 2</td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="DISEC"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="EFC"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SOCHUM"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SPECPOL"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="ESC"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNGA"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SC/UNSC"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNESCO"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNCTAD"></td>
-                                        <td><input type="radio" name="comm-preference2" id="comm-preference2" value="G20"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference2" id="comm-preference2" value="G20"></td>
                                     </tr>
                                     <tr>
                                         <td>Committee <br>Preference 3</td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="DISEC"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="EFC"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SOCHUM"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SPECPOL"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="ESC"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNGA"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SC/UNSC"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNESCO"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNCTAD"></td>
-                                        <td><input type="radio" name="comm-preference3" id="comm-preference3" value="G20"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="DISEC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="EFC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SOCHUM"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SPECPOL"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="ESC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNGA"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="SC/UNSC"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNESCO"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="UNCTAD"></td>
+                                        <td><input type="radio" name="comm_preference3" id="comm-preference3" value="G20"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -222,15 +222,15 @@
                         <div class="country-preference">
                             <div class="country-prefer1">
                                 <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 1 (Maximum 3)</label><br>
-                                <input type="text" name="country-preference1" id="country-preference1"  class="inputs coun-prefer" placeholder="Country of Preference">
+                                <input type="text" name="country_preference1" id="country-preference1"  class="inputs coun-prefer" placeholder="Country of Preference">
                             </div>
                             <div class="country-prefer2">
                                 <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 2 (Maximum 3)</label><br>
-                                <input type="text" name="country-preference2" id="country-preference2" class="inputs coun-prefer" placeholder="Country of Preference">
+                                <input type="text" name="country_preference2" id="country-preference2" class="inputs coun-prefer" placeholder="Country of Preference">
                             </div>
                             <div class="country-prefer3">
                                 <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 3 (Maximum 3)</label><br>
-                                <input type="text" name="country-preference3" id="country-preference3" class="inputs coun-prefer" placeholder="Country of Preference">
+                                <input type="text" name="country_preference3" id="country-preference3" class="inputs coun-prefer" placeholder="Country of Preference">
                             </div>
                         </div>
 
@@ -252,11 +252,14 @@
                         <div class="comment">
                             <label for="suggestion" class="form-label">Anything else that you would like to add
                                 ?</label><br>
-                            <textarea class="form-control" id="suggestion" rows="3"></textarea>
+                            <textarea class="form-control" name="suggestion" id="suggestion" rows="3"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
 
             <input type="submit" value="Submit" class="btn btn-primary">
         </div>
