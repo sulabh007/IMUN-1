@@ -17,12 +17,12 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Bootstrap Icons -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Sign Up</title>
+    <title>Sign Up For EB</title>
 </head>
 <body>
         <form action="" method="post" >
             <div class="forms">
-                <h1>D. Y. Patil MUN Registeration</h1>
+                <h1 style="margin-bottom: 2rem;">D. Y. Patil MUN Registeration</h1>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -195,77 +195,179 @@
                             <div class="accordion-body">
                                 <div class="past-mun">
                                     <div class="past-MUN-as-del">
-                                        <label for="past-del" class="form-label">Previous MUN Experience as a Delegate (Sr. No. / Conference Name / Year
+                                        <label for="past_del" class="form-label">Previous MUN Experience as a Delegate (Sr. No. / Conference Name / Year
                                             / Committee / Country)</label><br>
-                                        <textarea class="form-control" id="past-del" rows="2"></textarea>
+                                        <textarea class="form-control" id="past_del" name="past_del" rows="2"></textarea>
                                     </div>
                                     <div class="past-MUN-as-exec">
-                                        <label for="past-exec" class="form-label">Previous MUN Experience as The Executive Board (Sr. No. /
+                                        <label for="past_exec" class="form-label">Previous MUN Experience as The Executive Board (Sr. No. /
                                             Conference Name / Year / Committee / Country)</label><br>
-                                        <textarea class="form-control" id="past-exec" rows="2"></textarea>
+                                        <textarea class="form-control" id="past_exec" name="past_exec" rows="2"></textarea>
                                     </div>
                                     <div class="past-public-speaker">
-                                        <label for="past-ps" class="form-label">Public Speaking Experience apart from a Model United Nations
+                                        <label for="past_ps" class="form-label">Public Speaking Experience apart from a Model United Nations
                                             Conference</label><br>
-                                        <textarea class="form-control" id="past-ps" rows="2"></textarea>
+                                        <textarea class="form-control" id="past_ps" name="past_ps" rows="2"></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseFour">
-                            Co-Delegate Past Experience
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body">
-                            <div id="cod-past-mun">
-                                <div class="cod past-MUN-as-del">
-                                    <label for="cod-past-del" class="form-label">Previous MUN Experience as a Delegate (Sr. No. / Conference Name /
-                                        Year
-                                        / Committee / Country)</label><br>
-                                    <textarea class="form-control" id="cod-past-del" rows="2"></textarea>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Co-Delegate Past Experience
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                <div id="cod-past-mun">
+                                    <div class="cod past-MUN-as-del">
+                                        <label for="cod_past_del" class="form-label">Previous MUN Experience as a Delegate (Sr. No. /
+                                            Conference Name /
+                                            Year
+                                            / Committee / Country)</label><br>
+                                        <textarea class="form-control" id="cod_past_del" name="cod_past_del" rows="2"></textarea>
+                                    </div>
+                                    <div class="cod past-MUN-as-exec">
+                                        <label for="cod_past_exec" class="form-label">Previous MUN Experience as The Executive Board (Sr.
+                                            No. /
+                                            Conference Name / Year / Committee / Country)</label><br>
+                                        <textarea class="form-control" id="cod_past_exec" name="cod_past_exec" rows="2"></textarea>
+                                    </div>
+                                    <div class="cod past-public-speaker">
+                                        <label for="cod_past_ps" class="form-label">Public Speaking Experience apart from a Model United
+                                            Nations
+                                            Conference</label><br>
+                                        <textarea class="form-control" id="cod_past_ps" name="cod_past_ps" rows="2"></textarea>
+                                    </div>
                                 </div>
-                                <div class="cod past-MUN-as-exec">
-                                    <label for="cod-past-exec" class="form-label">Previous MUN Experience as The Executive Board (Sr. No. /
-                                        Conference Name / Year / Committee / Country)</label><br>
-                                    <textarea class="form-control" id="cod-past-exec" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFIve">
+                                Committee Preferences
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body" id="table">
+                                <div class="comm-table">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>DISEC</th>
+                                                <th>EFC</th>
+                                                <th>SOCHUM</th>
+                                                <th>SPECPOL</th>
+                                                <th>ESC</th>
+                                                <th>UNGA</th>
+                                                <th>SC/UNSC</th>
+                                                <th>UNESCO</th>
+                                                <th>UNCTAD</th>
+                                                <th>G20</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-heading">Committee <br>Preference 1</td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="DISEC"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="EFC"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SOCHUM"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SPECPOL"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="ESC"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNGA"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="SC/UNSC"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNESCO"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="UNCTAD"></td>
+                                                <td><input type="radio" name="comm-preference1" id="comm-preference1" value="G20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Committee <br>Preference 2</td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="DISEC"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="EFC"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SOCHUM"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SPECPOL"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="ESC"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNGA"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="SC/UNSC"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNESCO"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="UNCTAD"></td>
+                                                <td><input type="radio" name="comm-preference2" id="comm-preference2" value="G20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Committee <br>Preference 3</td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="DISEC"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="EFC"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SOCHUM"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SPECPOL"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="ESC"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNGA"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="SC/UNSC"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNESCO"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="UNCTAD"></td>
+                                                <td><input type="radio" name="comm-preference3" id="comm-preference3" value="G20"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="cod past-public-speaker">
-                                    <label for="cod-past-ps" class="form-label">Public Speaking Experience apart from a Model United Nations
-                                        Conference</label><br>
-                                    <textarea class="form-control" id="cod-past-ps" rows="2"></textarea>
+                    
+                                <div class="country-preference">
+                                    <div class="country-prefer1">
+                                        <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 1
+                                            (Maximum 3)</label><br>
+                                        <input type="text" name="country-preference1" id="country-preference1" class="inputs coun-prefer"
+                                            placeholder="Country of Preference">
+                                    </div>
+                                    <div class="country-prefer2">
+                                        <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 2
+                                            (Maximum 3)</label><br>
+                                        <input type="text" name="country-preference2" id="country-preference2" class="inputs coun-prefer"
+                                            placeholder="Country of Preference">
+                                    </div>
+                                    <div class="country-prefer3">
+                                        <label for="suggestion" class="form-label">Country/Portfolio Preference for Committee Preference 3
+                                            (Maximum 3)</label><br>
+                                        <input type="text" name="country-preference3" id="country-preference3" class="inputs coun-prefer"
+                                            placeholder="Country of Preference">
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseSix">
+                                Any suggestion
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingSix">
+                            <div class="accordion-body">
+                                <div class="comment">
+                                    <label for="suggestion" class="form-label">Anything else that you would like to add ?</label><br>
+                                    <textarea class="form-control" id="suggestion" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseFive">
-                            Any suggestion
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFive">
-                        <div class="accordion-body">
-                            <div class="comment">
-                                <label for="suggestion" class="form-label">Anything else that you would like to add ?</label><br>
-                                <textarea class="form-control" id="suggestion" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 
 
 
